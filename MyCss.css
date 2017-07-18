@@ -1,0 +1,168 @@
+body {
+    background: darkgray;
+}
+
+#baymax {
+    /* 上下边界为0，左右则根据宽度自适应相同值（即居中)*/
+    margin: 0 auto;
+    height: 600px;
+    overflow: hidden;
+}
+
+#head {
+    height: 64px;
+    width: 100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 50%;
+    border-bottom: 5px solid #e0e0e0;
+    position: relative;
+    z-index: 100;
+}
+
+#eye,
+#eye2 {
+    width: 11px;
+    height: 13px;
+    background: #282828;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 27px;
+    transform: rotate(8deg);
+}
+
+#eye2 {
+    transform: rotate(-8deg);
+    top: 17px;
+    left: 69px;
+}
+
+#mouth {
+    width: 40px;
+    height: 2px;
+    background: #282828;
+    position: relative;
+    top: 10px;
+    left: 34px;
+}
+
+#torso,
+#belly {
+    margin: 0 auto;
+    height: 200px;
+    width: 180px;
+    background: #fff;
+    border-radius: 47%;
+    border: 5px solid #e0e0e0;
+    border-top: none;
+    z-index: 1;
+}
+
+#belly {
+    height: 300px;
+    width: 245px;
+    margin-top: -140px;
+    z-index: 5;
+}
+
+#cover {
+    width: 190px;
+    height: 150px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    border-radius: 50%;
+}
+
+#heart {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+    left: 120px;
+    z-index: 111;
+    box-shadow: 2px 5px 2px #ccc inset;
+    border: 1px solid #ccc;
+}
+
+#left-arm,
+#right-arm {
+    height: 270px;
+    width: 120px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: -350px;
+    left: -100px;
+    transform: rotate(20deg);
+    z-index: -1;
+}
+
+#right-arm {
+    transform: rotate(-20deg);
+    position: relative;
+    top: -615px;
+    left: 100px;
+}
+
+#l-bigfinger,
+#r-bigfinger {
+    height: 50px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    transform: rotate(-50deg);
+}
+
+#r-bigfinger {
+    left: 50px;
+    transform: rotate(50deg);
+}
+
+#l-smallfinger,
+#r-smallfinger {
+    height: 35px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 195px;
+    left: 66px;
+    transform: rotate(-40deg);
+}
+
+#r-smallfinger {
+    background: #fff;
+    transform: rotate(40deg);
+    top: 195px;
+    left: 37px;
+}
+
+#left-leg,
+#right-leg {
+    margin: 0 auto;
+    height: 170px;
+    width: 90px;
+    background: #fff;
+    border-radius: 40% 30% 10px 45%;
+    position: relative;
+    top: -640px;
+    left: -45px;
+    z-index: -2;
+    transform: rotate(-1deg);
+}
+
+#right-leg {
+    border-radius: 30% 40% 45% 10px;
+    position: relative;
+    top: -810px;
+    left: 50px;
+    transform: rotate(1deg);
+}
